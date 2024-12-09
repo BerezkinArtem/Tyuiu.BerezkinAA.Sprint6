@@ -23,7 +23,7 @@ namespace Tyuiu.BerezkinAA.Sprint6.Task0.V1
 
         private void textBoxWrite_BAA_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != '.') && (e.KeyChar != 8) && (e.KeyChar != '-'))
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8))
             {
                 e.Handled = true;
             }
@@ -32,6 +32,16 @@ namespace Tyuiu.BerezkinAA.Sprint6.Task0.V1
         private void buttonHelp_BAA_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 0 выполнил студент группы ИСПб-24-1 Березкин Артем Андреевич", "Сообщение");
+        }
+
+        private void textBoxWrite_BAA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelGoal_BAA_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

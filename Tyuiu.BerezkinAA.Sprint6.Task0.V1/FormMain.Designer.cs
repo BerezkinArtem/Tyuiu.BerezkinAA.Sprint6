@@ -34,9 +34,9 @@
             groupBoxInput_BAA.SuspendLayout();
             groupBoxOutput_BAA.SuspendLayout();
             SuspendLayout();
-           
+            // 
             // groupBoxCondition_BAA
-            
+            // 
             groupBoxCondition_BAA.Controls.Add(pictureBoxFormula_BAA);
             groupBoxCondition_BAA.Controls.Add(labelGoal_BAA);
             groupBoxCondition_BAA.Location = new Point(27, 23);
@@ -45,9 +45,9 @@
             groupBoxCondition_BAA.TabIndex = 0;
             groupBoxCondition_BAA.TabStop = false;
             groupBoxCondition_BAA.Text = "Условие";
-            
+            // 
             // pictureBoxFormula_BAA
-           
+            // 
             pictureBoxFormula_BAA.BorderStyle = BorderStyle.FixedSingle;
             pictureBoxFormula_BAA.Image = (Image)resources.GetObject("pictureBoxFormula_BAA.Image");
             pictureBoxFormula_BAA.Location = new Point(376, 0);
@@ -56,18 +56,19 @@
             pictureBoxFormula_BAA.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBoxFormula_BAA.TabIndex = 2;
             pictureBoxFormula_BAA.TabStop = false;
-            
+            // 
             // labelGoal_BAA
-            
+            // 
             labelGoal_BAA.AutoSize = true;
-            labelGoal_BAA.Location = new Point(6, 19);
+            labelGoal_BAA.Location = new Point(0, 19);
             labelGoal_BAA.Name = "labelGoal_BAA";
             labelGoal_BAA.Size = new Size(205, 15);
             labelGoal_BAA.TabIndex = 1;
             labelGoal_BAA.Text = "Вычислить выражение по формуле";
-             
+            labelGoal_BAA.Click += labelGoal_BAA_Click;
+            // 
             // groupBoxInput_BAA
-             
+            // 
             groupBoxInput_BAA.Controls.Add(labelVariable_BAA);
             groupBoxInput_BAA.Controls.Add(textBoxWrite_BAA);
             groupBoxInput_BAA.Location = new Point(27, 193);
@@ -76,27 +77,28 @@
             groupBoxInput_BAA.TabIndex = 1;
             groupBoxInput_BAA.TabStop = false;
             groupBoxInput_BAA.Text = "Ввод данных";
-           
+            // 
             // labelVariable_BAA
-             
+            // 
             labelVariable_BAA.AutoSize = true;
             labelVariable_BAA.Location = new Point(6, 19);
             labelVariable_BAA.Name = "labelVariable_BAA";
             labelVariable_BAA.Size = new Size(89, 15);
             labelVariable_BAA.TabIndex = 3;
             labelVariable_BAA.Text = "Переменная X:";
-             
+            // 
             // textBoxWrite_BAA
-            
+            // 
             textBoxWrite_BAA.Cursor = Cursors.IBeam;
             textBoxWrite_BAA.Location = new Point(6, 39);
             textBoxWrite_BAA.Name = "textBoxWrite_BAA";
             textBoxWrite_BAA.Size = new Size(100, 23);
             textBoxWrite_BAA.TabIndex = 0;
+            textBoxWrite_BAA.TextChanged += textBoxWrite_BAA_TextChanged;
             textBoxWrite_BAA.KeyPress += textBoxWrite_BAA_KeyPress;
-             
+            // 
             // groupBoxOutput_BAA
-           
+            // 
             groupBoxOutput_BAA.Controls.Add(textBoxResult_BAA);
             groupBoxOutput_BAA.Location = new Point(381, 193);
             groupBoxOutput_BAA.Name = "groupBoxOutput_BAA";
@@ -104,18 +106,18 @@
             groupBoxOutput_BAA.TabIndex = 2;
             groupBoxOutput_BAA.TabStop = false;
             groupBoxOutput_BAA.Text = "Вывод данных";
-             
+            // 
             // textBoxResult_BAA
-             
+            // 
             textBoxResult_BAA.BorderStyle = BorderStyle.FixedSingle;
-            textBoxResult_BAA.Location = new Point(6, 39);
+            textBoxResult_BAA.Location = new Point(0, 39);
             textBoxResult_BAA.Name = "textBoxResult_BAA";
             textBoxResult_BAA.ReadOnly = true;
             textBoxResult_BAA.Size = new Size(131, 23);
             textBoxResult_BAA.TabIndex = 0;
-           
+            // 
             // buttonStart_BAA
-             
+            // 
             buttonStart_BAA.Cursor = Cursors.Hand;
             buttonStart_BAA.FlatStyle = FlatStyle.Flat;
             buttonStart_BAA.Location = new Point(418, 319);
@@ -124,10 +126,11 @@
             buttonStart_BAA.TabIndex = 3;
             buttonStart_BAA.Text = "Выполнить";
             buttonStart_BAA.UseVisualStyleBackColor = true;
+            buttonStart_BAA.TextChanged += buttonStart_BAA_Click;
             buttonStart_BAA.Click += buttonStart_BAA_Click;
-             
+            // 
             // buttonHelp_BAA
-           
+            // 
             buttonHelp_BAA.Cursor = Cursors.Help;
             buttonHelp_BAA.FlatStyle = FlatStyle.Flat;
             buttonHelp_BAA.Location = new Point(387, 322);
@@ -137,9 +140,9 @@
             buttonHelp_BAA.Text = "?";
             buttonHelp_BAA.UseVisualStyleBackColor = true;
             buttonHelp_BAA.Click += buttonHelp_BAA_Click;
-             
+            // 
             // FormMain
-             
+            // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(584, 361);
