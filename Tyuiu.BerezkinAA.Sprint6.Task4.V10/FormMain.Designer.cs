@@ -121,6 +121,7 @@
             groupBoxCondition_BAA.TabIndex = 8;
             groupBoxCondition_BAA.TabStop = false;
             groupBoxCondition_BAA.Text = "Условие";
+            groupBoxCondition_BAA.Enter += groupBoxCondition_BAA_Enter;
             // 
             // labelResult_BAA
             // 

@@ -46,5 +46,10 @@ namespace Tyuiu.BerezkinAA.Sprint6.Task4.V10
                 txt.Start();
             }
         }
+
+        private void groupBoxCondition_BAA_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
