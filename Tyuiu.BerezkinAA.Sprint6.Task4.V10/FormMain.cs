@@ -51,5 +51,10 @@ namespace Tyuiu.BerezkinAA.Sprint6.Task4.V10
         {
 
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

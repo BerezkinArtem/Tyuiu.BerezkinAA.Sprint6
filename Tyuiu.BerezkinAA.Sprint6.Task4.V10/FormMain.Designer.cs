@@ -170,6 +170,7 @@
             chart1.Size = new Size(629, 333);
             chart1.TabIndex = 2;
             chart1.Text = "chart1";
+            chart1.Click += chart1_Click;
             // 
             // buttonHelp_BAA
             // 

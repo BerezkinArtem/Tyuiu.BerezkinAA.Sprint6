@@ -1,3 +1,5 @@
+ï»¿using System.Diagnostics;
+using System.Globalization;
 using Tyuiu.BerezkinAA.Sprint6.Task5.V27.Lib;
 namespace Tyuiu.BerezkinAA.Sprint6.Task5.V27
 {
@@ -10,32 +12,42 @@ namespace Tyuiu.BerezkinAA.Sprint6.Task5.V27
 
         DataService ds = new DataService();
         string path = @"C:\DataSprint5\InPutDataFileTask5V27.txt";
+
         private void buttonStart_BAA_Click(object sender, EventArgs e)
         {
             dataGridView_BAA.ColumnCount = 2;
             dataGridView_BAA.Columns[0].Width = 20;
             dataGridView_BAA.Columns[1].Width = 50;
+
+            this.chart_BAA.ChartAreas[0].AxisX.Title = "ÃŽÃ±Ã¼ X";
+            this.chart_BAA.ChartAreas[0].AxisY.Title = "ÃŽÃ±Ã¼ Y";
+
             chart_BAA.Series[0].Points.Clear();
-            double[] mass = new double[ds.len];
-            mass = ds.LoadFromDataFile(path);
-            for (int i = 0; i < mass.Length; i++)
+
+            double[] numsMass = ds.LoadFromDataFile(path);
+
+            for (int i = 0; i < numsMass.Length; i++)
             {
-                dataGridView_BAA.Rows.Add(Convert.ToString(i), Convert.ToString(mass[i]));
-                chart_BAA.Series[0].Points.AddXY(i, mass[i]);
+                dataGridView_BAA.Rows.Add(Convert.ToString(i), numsMass[i].ToString("F2", CultureInfo.InvariantCulture));
+                chart_BAA.Series[0].Points.AddXY(i, numsMass[i]);
+            }
+        }
+
+        private void buttonOpen_BAA_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo("notepad.exe", path) { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ð¤Ð°Ð¹Ð» Ð½Ð°Ñ…Ð¾Ð´Ð¸Ñ‚ÑÑ Ð²: {ex.Message}", "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void buttonHelp_BAA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Òàñê 5 âûïîëíèë ñòóäåíò ãðóïïû ÈÑÏá-24-1 Áåðåçêèí Àðòåì Àíäðååâè÷", "Ñîîáùåíèå");
-        }
-
-        private void buttonOpen_BAA_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process txt = new System.Diagnostics.Process();
-            txt.StartInfo.FileName = "notepad";
-            txt.StartInfo.Arguments = path;
-            txt.Start();
+            MessageBox.Show("Ð¢Ð°ÑÐº 4 Ð²Ñ‹Ð¿Ð¾Ð»Ð½Ð¸Ð» ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð˜Ð¡ÐŸÐ±-24-1 Ð‘ÐµÑ€ÐµÐ·ÐºÐ¸Ð½ ÐÑ€Ñ‚ÐµÐ¼ ÐÐ½Ð´Ñ€ÐµÐµÐ²Ð¸Ñ‡", "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ");
         }
     }
 }
