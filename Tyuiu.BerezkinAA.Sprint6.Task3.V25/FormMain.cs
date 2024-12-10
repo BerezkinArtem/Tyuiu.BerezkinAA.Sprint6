@@ -71,5 +71,10 @@ namespace Tyuiu.BerezkinAA.Sprint6.Task3.V25
         {
             MessageBox.Show("Таск 3 выполнил студент группы ИСПб-24-1 Березкин Артем Андреевич", "Сообщение");
         }
+
+        private void dataGridViewMatrix_BAA_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

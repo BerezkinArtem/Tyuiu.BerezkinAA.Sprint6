@@ -69,6 +69,7 @@
             dataGridViewMatrix_BAA.RowHeadersVisible = false;
             dataGridViewMatrix_BAA.Size = new Size(240, 215);
             dataGridViewMatrix_BAA.TabIndex = 1;
+            dataGridViewMatrix_BAA.CellContentClick += dataGridViewMatrix_BAA_CellContentClick;
             // 
             // buttonStart_BAA
             // 
