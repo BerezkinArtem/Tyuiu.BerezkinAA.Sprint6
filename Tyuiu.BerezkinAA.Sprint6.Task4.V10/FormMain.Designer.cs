@@ -50,67 +50,74 @@
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // buttonStart_BAA
             // 
-            buttonStart_BAA.Location = new Point(675, 47);
-            buttonStart_BAA.Name = "button1";
-            buttonStart_BAA.Size = new Size(143, 48);
+            buttonStart_BAA.Location = new Point(591, 35);
+            buttonStart_BAA.Margin = new Padding(3, 2, 3, 2);
+            buttonStart_BAA.Name = "buttonStart_BAA";
+            buttonStart_BAA.Size = new Size(125, 36);
             buttonStart_BAA.TabIndex = 10;
             buttonStart_BAA.Text = "Выполнить";
             buttonStart_BAA.UseVisualStyleBackColor = true;
             buttonStart_BAA.Click += buttonStart_BAA_Click;
             // 
-            // groupBoxOutPut_BAA
+            // groupBoxInPut_BAA
             // 
             groupBoxInPut_BAA.Controls.Add(textBoxStop_BAA);
             groupBoxInPut_BAA.Controls.Add(textBoxStart_BAA);
             groupBoxInPut_BAA.Controls.Add(labelStop_BAA);
             groupBoxInPut_BAA.Controls.Add(labelStart_BAA);
-            groupBoxInPut_BAA.Location = new Point(370, 6);
-            groupBoxInPut_BAA.Name = "groupBox3";
-            groupBoxInPut_BAA.Size = new Size(299, 99);
+            groupBoxInPut_BAA.Location = new Point(324, 4);
+            groupBoxInPut_BAA.Margin = new Padding(3, 2, 3, 2);
+            groupBoxInPut_BAA.Name = "groupBoxInPut_BAA";
+            groupBoxInPut_BAA.Padding = new Padding(3, 2, 3, 2);
+            groupBoxInPut_BAA.Size = new Size(262, 74);
             groupBoxInPut_BAA.TabIndex = 9;
             groupBoxInPut_BAA.TabStop = false;
             groupBoxInPut_BAA.Text = "Ввод данных";
             // 
-            // textBox2
+            // textBoxStop_BAA
             // 
-            textBoxStop_BAA.Location = new Point(140, 62);
-            textBoxStop_BAA.Name = "textBox2";
-            textBoxStop_BAA.Size = new Size(125, 27);
+            textBoxStop_BAA.Location = new Point(122, 46);
+            textBoxStop_BAA.Margin = new Padding(3, 2, 3, 2);
+            textBoxStop_BAA.Name = "textBoxStop_BAA";
+            textBoxStop_BAA.Size = new Size(110, 23);
             textBoxStop_BAA.TabIndex = 3;
             // 
             // textBoxStart_BAA
             // 
-            textBoxStart_BAA.Location = new Point(9, 62);
-            textBoxStart_BAA.Name = "textBox1";
-            textBoxStart_BAA.Size = new Size(125, 27);
+            textBoxStart_BAA.Location = new Point(8, 46);
+            textBoxStart_BAA.Margin = new Padding(3, 2, 3, 2);
+            textBoxStart_BAA.Name = "textBoxStart_BAA";
+            textBoxStart_BAA.Size = new Size(110, 23);
             textBoxStart_BAA.TabIndex = 2;
             // 
-            // label4
+            // labelStop_BAA
             // 
             labelStop_BAA.AutoSize = true;
-            labelStop_BAA.Location = new Point(140, 41);
-            labelStop_BAA.Name = "label4";
-            labelStop_BAA.Size = new Size(53, 20);
+            labelStop_BAA.Location = new Point(122, 31);
+            labelStop_BAA.Name = "labelStop_BAA";
+            labelStop_BAA.Size = new Size(41, 15);
             labelStop_BAA.TabIndex = 1;
             labelStop_BAA.Text = "Конец";
             // 
             // labelStart_BAA
             // 
             labelStart_BAA.AutoSize = true;
-            labelStart_BAA.Location = new Point(9, 41);
-            labelStart_BAA.Name = "label1";
-            labelStart_BAA.Size = new Size(47, 20);
+            labelStart_BAA.Location = new Point(8, 31);
+            labelStart_BAA.Name = "labelStart_BAA";
+            labelStart_BAA.Size = new Size(38, 15);
             labelStart_BAA.TabIndex = 0;
             labelStart_BAA.Text = "Старт";
             // 
             // groupBoxCondition_BAA
             // 
             groupBoxCondition_BAA.Controls.Add(labelResult_BAA);
-            groupBoxCondition_BAA.Location = new Point(5, 6);
-            groupBoxCondition_BAA.Name = "groupBox1";
-            groupBoxCondition_BAA.Size = new Size(345, 99);
+            groupBoxCondition_BAA.Location = new Point(4, 4);
+            groupBoxCondition_BAA.Margin = new Padding(3, 2, 3, 2);
+            groupBoxCondition_BAA.Name = "groupBoxCondition_BAA";
+            groupBoxCondition_BAA.Padding = new Padding(3, 2, 3, 2);
+            groupBoxCondition_BAA.Size = new Size(302, 74);
             groupBoxCondition_BAA.TabIndex = 8;
             groupBoxCondition_BAA.TabStop = false;
             groupBoxCondition_BAA.Text = "Условие";
@@ -118,28 +125,31 @@
             // labelResult_BAA
             // 
             labelResult_BAA.AutoSize = true;
-            labelResult_BAA.Location = new Point(12, 41);
-            labelResult_BAA.Name = "label2";
-            labelResult_BAA.Size = new Size(209, 20);
+            labelResult_BAA.Location = new Point(10, 31);
+            labelResult_BAA.Name = "labelResult_BAA";
+            labelResult_BAA.Size = new Size(165, 15);
             labelResult_BAA.TabIndex = 0;
             labelResult_BAA.Text = "Результат вывести в таблице";
             // 
             // groupBoxOutPut_BAA
             // 
             groupBoxOutPut_BAA.Controls.Add(textBoxResult_BAA);
-            groupBoxOutPut_BAA.Location = new Point(5, 111);
-            groupBoxOutPut_BAA.Name = "groupBox2";
-            groupBoxOutPut_BAA.Size = new Size(345, 444);
+            groupBoxOutPut_BAA.Location = new Point(4, 83);
+            groupBoxOutPut_BAA.Margin = new Padding(3, 2, 3, 2);
+            groupBoxOutPut_BAA.Name = "groupBoxOutPut_BAA";
+            groupBoxOutPut_BAA.Padding = new Padding(3, 2, 3, 2);
+            groupBoxOutPut_BAA.Size = new Size(302, 333);
             groupBoxOutPut_BAA.TabIndex = 11;
             groupBoxOutPut_BAA.TabStop = false;
             groupBoxOutPut_BAA.Text = "Вывод данных";
             // 
-            // textBox3
+            // textBoxResult_BAA
             // 
-            textBoxResult_BAA.Location = new Point(16, 33);
+            textBoxResult_BAA.Location = new Point(14, 25);
+            textBoxResult_BAA.Margin = new Padding(3, 2, 3, 2);
             textBoxResult_BAA.Multiline = true;
-            textBoxResult_BAA.Name = "textBox3";
-            textBoxResult_BAA.Size = new Size(312, 405);
+            textBoxResult_BAA.Name = "textBoxResult_BAA";
+            textBoxResult_BAA.Size = new Size(274, 305);
             textBoxResult_BAA.TabIndex = 0;
             // 
             // chart1
@@ -148,22 +158,24 @@
             chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             chart1.Legends.Add(legend1);
-            chart1.Location = new Point(370, 111);
+            chart1.Location = new Point(324, 83);
+            chart1.Margin = new Padding(3, 2, 3, 2);
             chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chart1.Series.Add(series1);
-            chart1.Size = new Size(719, 444);
+            chart1.Size = new Size(629, 333);
             chart1.TabIndex = 2;
             chart1.Text = "chart1";
             // 
-            // button2
+            // buttonHelp_BAA
             // 
-            buttonHelp_BAA.Location = new Point(824, 47);
+            buttonHelp_BAA.Location = new Point(721, 35);
+            buttonHelp_BAA.Margin = new Padding(3, 2, 3, 2);
             buttonHelp_BAA.Name = "buttonHelp_BAA";
-            buttonHelp_BAA.Size = new Size(143, 48);
+            buttonHelp_BAA.Size = new Size(125, 36);
             buttonHelp_BAA.TabIndex = 12;
             buttonHelp_BAA.Text = "Справка";
             buttonHelp_BAA.UseVisualStyleBackColor = true;
@@ -171,9 +183,10 @@
             // 
             // buttonSave_BAA
             // 
-            buttonSave_BAA.Location = new Point(973, 47);
-            buttonSave_BAA.Name = "button3";
-            buttonSave_BAA.Size = new Size(143, 48);
+            buttonSave_BAA.Location = new Point(851, 35);
+            buttonSave_BAA.Margin = new Padding(3, 2, 3, 2);
+            buttonSave_BAA.Name = "buttonSave_BAA";
+            buttonSave_BAA.Size = new Size(125, 36);
             buttonSave_BAA.TabIndex = 13;
             buttonSave_BAA.Text = "Сохранить";
             buttonSave_BAA.UseVisualStyleBackColor = true;
@@ -181,9 +194,9 @@
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1120, 567);
+            ClientSize = new Size(980, 425);
             Controls.Add(chart1);
             Controls.Add(buttonSave_BAA);
             Controls.Add(buttonHelp_BAA);
@@ -191,8 +204,9 @@
             Controls.Add(groupBoxInPut_BAA);
             Controls.Add(groupBoxCondition_BAA);
             Controls.Add(groupBoxOutPut_BAA);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormMain";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 4| Вариант 10 | Березкин А.А.";
             groupBoxInPut_BAA.ResumeLayout(false);
             groupBoxInPut_BAA.PerformLayout();
             groupBoxCondition_BAA.ResumeLayout(false);
