@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             panelUP_BAA = new Panel();
             buttonHelp_BAA = new Button();
             buttonLoad_BAA = new Button();
@@ -53,7 +52,7 @@
             groupBoxInput_BAA.SuspendLayout();
             SuspendLayout();
             // 
-            // panelUP_MSM
+            // panelUP_BAA
             // 
             panelUP_BAA.Controls.Add(buttonHelp_BAA);
             panelUP_BAA.Controls.Add(buttonLoad_BAA);
@@ -80,7 +79,7 @@
             // buttonLoad_BAA
             // 
             buttonLoad_BAA.Location = new Point(12, 12);
-            buttonLoad_BAA.Name = "buttonLoad_MSM";
+            buttonLoad_BAA.Name = "buttonLoad_BAA";
             buttonLoad_BAA.Size = new Size(80, 80);
             buttonLoad_BAA.TabIndex = 2;
             buttonLoad_BAA.Text = "Загрузить";
@@ -122,7 +121,6 @@
             textBoxTask_BAA.ReadOnly = true;
             textBoxTask_BAA.Size = new Size(778, 42);
             textBoxTask_BAA.TabIndex = 0;
-            textBoxTask_BAA.Text = resources.GetString("textBoxTask_BAA.Text");
             // 
             // panelFill_BAA
             // 
@@ -155,6 +153,7 @@
             textBoxOutput_BAA.ScrollBars = ScrollBars.Vertical;
             textBoxOutput_BAA.Size = new Size(384, 327);
             textBoxOutput_BAA.TabIndex = 0;
+            textBoxOutput_BAA.TextChanged += textBoxOutput_BAA_TextChanged;
             // 
             // panelLeft_BAA
             // 

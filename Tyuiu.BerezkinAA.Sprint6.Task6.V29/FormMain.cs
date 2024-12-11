@@ -30,5 +30,10 @@ namespace Tyuiu.BerezkinAA.Sprint6.Task6.V29
             FormAbout fa = new FormAbout();
             fa.ShowDialog();
         }
+
+        private void textBoxOutput_BAA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
